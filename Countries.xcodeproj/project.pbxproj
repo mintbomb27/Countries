@@ -13,8 +13,8 @@
 		8CEC62E3263BED550079ED9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEC62E1263BED550079ED9E /* Main.storyboard */; };
 		8CEC62E5263BED580079ED9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEC62E4263BED580079ED9E /* Assets.xcassets */; };
 		8CEC62E8263BED580079ED9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEC62E6263BED580079ED9E /* LaunchScreen.storyboard */; };
-		8CEC62F1263BF3910079ED9E /* CountryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC62F0263BF3910079ED9E /* CountryCellView.swift */; };
 		8CEC62F4263BF5AF0079ED9E /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC62F3263BF5AF0079ED9E /* CountriesModel.swift */; };
+		8CEC62FC263C1A370079ED9E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC62FB263C1A370079ED9E /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		8CEC62E4263BED580079ED9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CEC62E7263BED580079ED9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CEC62E9263BED580079ED9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CEC62F0263BF3910079ED9E /* CountryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellView.swift; sourceTree = "<group>"; };
 		8CEC62F3263BF5AF0079ED9E /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
+		8CEC62FB263C1A370079ED9E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,49 @@
 		8CEC62DA263BED550079ED9E /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				8CEC62FA263C1A1C0079ED9E /* Extensions */,
+				8CEC62F9263C1A030079ED9E /* Views */,
+				8CEC62F8263C19EF0079ED9E /* Models */,
+				8CEC62F7263C19E30079ED9E /* Controller */,
+				8CEC62E4263BED580079ED9E /* Assets.xcassets */,
+				8CEC62E9263BED580079ED9E /* Info.plist */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		8CEC62F7263C19E30079ED9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				8CEC62DB263BED550079ED9E /* AppDelegate.swift */,
 				8CEC62DD263BED550079ED9E /* SceneDelegate.swift */,
 				8CEC62DF263BED550079ED9E /* ViewController.swift */,
-				8CEC62E1263BED550079ED9E /* Main.storyboard */,
-				8CEC62E4263BED580079ED9E /* Assets.xcassets */,
-				8CEC62E6263BED580079ED9E /* LaunchScreen.storyboard */,
-				8CEC62E9263BED580079ED9E /* Info.plist */,
-				8CEC62F0263BF3910079ED9E /* CountryCellView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CEC62F8263C19EF0079ED9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				8CEC62F3263BF5AF0079ED9E /* CountriesModel.swift */,
 			);
-			path = Countries;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CEC62F9263C1A030079ED9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CEC62E1263BED550079ED9E /* Main.storyboard */,
+				8CEC62E6263BED580079ED9E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CEC62FA263C1A1C0079ED9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CEC62FB263C1A370079ED9E /* StringExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +177,9 @@
 			files = (
 				8CEC62E0263BED550079ED9E /* ViewController.swift in Sources */,
 				8CEC62DC263BED550079ED9E /* AppDelegate.swift in Sources */,
+				8CEC62FC263C1A370079ED9E /* StringExtensions.swift in Sources */,
 				8CEC62DE263BED550079ED9E /* SceneDelegate.swift in Sources */,
 				8CEC62F4263BF5AF0079ED9E /* CountriesModel.swift in Sources */,
-				8CEC62F1263BF3910079ED9E /* CountryCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
