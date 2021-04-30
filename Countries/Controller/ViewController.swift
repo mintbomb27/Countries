@@ -13,18 +13,8 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    func emojiFromCode(code: String) -> (String){
-        var string = ""
-        for char in code.unicodeScalars{
-            guard let uni = UnicodeScalar(127397 + char.value) else {return ""}
-            string.unicodeScalars.append(uni)
-        }
-        return string
-    }
-    
     var countryNames: [Country] = NSLocale.isoCountryCodes.map {
-        let id = NSLocale.localeIdentifier(fromComponents: [NSLocale.Key.countryCode.rawValue: String($0) ])
-        print(id)
+        let id = NSLocale.localeIdentifier(fromComponents: [NSLocale.Key.countryCode.rawValue:$0])
         let countryName = NSLocale(localeIdentifier: "en_UK").displayName(forKey: NSLocale.Key.identifier, value: id)
         return Country(countryID: id, countryName: countryName ?? "India", countryEmoji: id.flagFromCode, labelString: "\(id.flagFromCode) \(countryName ?? "Error")")
     }
