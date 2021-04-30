@@ -13,7 +13,6 @@ extension String{
                     string.unicodeScalars.append(uni)
                 }
             }
-        print(string)
             return string
         }
 }
